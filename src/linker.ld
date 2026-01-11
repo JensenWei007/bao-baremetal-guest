@@ -40,6 +40,7 @@ SECTIONS {
     .data : {
         *(.data .data.*)
         PROVIDE(__global_pointer$ = . + 0x800);
+        __gp = . + 0x800;
         *(.sdata .sdata.* .sdata2.*)
     }
 
@@ -54,4 +55,5 @@ SECTIONS {
     PROVIDE(_stack_base = .);
     . = . + 32K; /* 32K of total stack size */
     PROVIDE(_heap_base = .);
+    PROVIDE(__heap_base = .);
 }

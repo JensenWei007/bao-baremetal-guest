@@ -49,6 +49,8 @@ void main(void){
 
     static volatile bool master_done = false;
 
+    printf("Bao bare-metal test guest-----------\n");
+
     if(cpu_is_master()){
         spin_lock(&print_lock);
         printf("Bao bare-metal test guest\n");
