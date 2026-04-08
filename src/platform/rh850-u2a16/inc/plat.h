@@ -19,8 +19,8 @@
 /* --------------------------------------- */
 
 #define PLAT_CLK_RLIN       (80000000)     // 80 MHz
-#define PLAT_UART_ADDR      (0xFFC7C100)   // RLIN35 Base
-#define UART_IRQ_ID         (438)          // RLIN35 Receive completion interrupt
+#define PLAT_UART_ADDR      (0xFFD28400)   // RLIN34 Base
+#define UART_IRQ_ID         (434)          // RLIN34 Receive completion interrupt
 
 #define PLAT_OSTM0_BASE     (0xFFBF0000UL) // OSTM0
 // OSTM0 timer interrupt
