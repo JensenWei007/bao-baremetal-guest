@@ -24,9 +24,9 @@ spinlock_t rx_lock = SPINLOCK_INITVAL;
 
 void renesas_rlin3_init(volatile struct renesas_rlin3* uart)
 {
-    *((volatile uint32_t*) MSRKCPROT) = KCPROT_ENABLE;
-    *((volatile uint32_t*) MSR_RLIN3) = 0;
-    *((volatile uint32_t*) MSRKCPROT) = KCPROT_DISABLE;
+    //*((volatile uint32_t*) MSRKCPROT) = KCPROT_ENABLE;
+    //*((volatile uint32_t*) MSR_RLIN3) = 0;
+    //*((volatile uint32_t*) MSRKCPROT) = KCPROT_DISABLE;
 
     // Set reset mode
     uart->RLN3nLCUC = 0;
