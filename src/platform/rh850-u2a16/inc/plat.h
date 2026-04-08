@@ -8,11 +8,11 @@
 
 #include <core.h>
 
-#define PLAT_RO_MEM_BASE    0x7F0000
+#define PLAT_RO_MEM_BASE    0x7E0000
 #define PLAT_RO_MEM_SIZE    0x10000
 
-#define PLAT_RW_MEM_BASE    0xFE100000
-#define PLAT_RW_MEM_SIZE    0x80000
+#define PLAT_RW_MEM_BASE    0xFE800000
+#define PLAT_RW_MEM_SIZE    0x40000
 
 #define PLAT_STACKHEAP_SIZE 0x2000
 
@@ -22,9 +22,9 @@
 #define PLAT_UART_ADDR      (0xFFD28400)   // RLIN34 Base
 #define UART_IRQ_ID         (434)          // RLIN34 Receive completion interrupt
 
-#define PLAT_OSTM0_BASE     (0xFFBF0000UL) // OSTM0
-// OSTM0 timer interrupt
-#define TIMER_IRQ_ID        (199UL)
+#define PLAT_OSTM1_BASE     (0xFFBF0100UL) // OSTM1
+// OSTM1 timer interrupt
+#define TIMER_IRQ_ID        (200UL)
 
 #define PLAT_INTC1_BASE     (0xFFFC0000UL)
 #define PLAT_INTC2_BASE     (0xFFF80000UL)
